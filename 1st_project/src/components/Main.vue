@@ -1,18 +1,29 @@
 <template>
   <div class="mainContainer">
-    <div class="subContainer">
-      <Header class="headerComponent"></Header>
-    </div>
+    <LoginComponent class="loginComponent" v-show="this.pageNum == 1"></LoginComponent>
+    <LandingComponent class="landingComponent" v-show="this.pageNum == 2"></LandingComponent>
   </div>
 </template>
 
 <script>
-import Header from '../components/Header.vue'
+import LoginComponent from '../components/LoginComponent.vue'
+import LandingComponent from '../components/LandingComponent.vue'
 
 export default {
   name: 'Main',
   components: {
-    Header
+    LoginComponent,
+    LandingComponent
+  },
+  // watch: {
+  //   nowPage (oldVal,newVal){
+  //     newVal = this.$getter.store()
+  //   }
+  // }
+  data() {
+    return {
+      pageNum: 1
+    }
   }
 }
 </script>

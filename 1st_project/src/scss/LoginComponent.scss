@@ -1,0 +1,69 @@
+.inputContainer {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .titleContainer {
+    font-size: 2em;
+    text-align: center;
+    color: white;
+
+    .title {
+      border-bottom: 3px solid #00D622;
+      margin: 0;
+      padding: 0 0 10px 0;
+    }
+
+    .subTitle {
+      margin: 10px 0;
+    }
+    
+  }
+
+  .inputContainer {
+    padding: 20px;
+
+    .inputBox {
+      padding: 15px 20px;
+      margin-bottom: 10px;
+      outline: none;
+      text-align: center;
+      border-radius: 25px;
+      color: white;
+    }
+
+    input::placeholder {
+      color: white;
+    }
+
+    .idBox ,.pwBox {
+      border: 2px solid #007CD6;
+      font-weight: bold;
+      background-color: #007CD6;
+
+      &:focus {
+        width: 280px;
+        border: 2px solid #00D622;
+        background-color: #00D622;
+        color: white;
+        font-size: 1em;
+      }
+    }
+
+    .btnBox {
+      width: 280px;
+      font-weight: bold;
+      font-size: 1em;
+      border: 2px solid #00D622; 
+      background: none;
+      font-size: 1em;
+      color: white;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
