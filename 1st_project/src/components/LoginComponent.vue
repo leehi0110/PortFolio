@@ -6,7 +6,7 @@
     </div>
     <div class="inputContainer">
       <input class="inputBox idBox" type="text" placeholder="Username" v-model="id">
-      <input class="inputBox pwBox" type="password" placeholder="Password" v-model="password">
+      <input class="inputBox pwBox" type="password" placeholder="Password" v-model="password" v-on:keyup.enter="changePage">
       <input class="inputBox btnBox" type="submit" value="Sign in" v-on:click="changePage()">
     </div>
   </div>
@@ -25,7 +25,10 @@ export default {
   methods: {
     changePage() {
       if(this.id == 'leehi0110' && this.password == 'asdf6709'){
-        alert('test')
+        this.$store.dispatch('Change_Page_Action','mainPage');
+      }
+      else {
+        alert('Access deny')
       }
     }
   }

@@ -1,7 +1,9 @@
 <template>
   <div class="mainContainer">
-    <LoginComponent class="loginComponent" v-show="this.pageNum == 1"></LoginComponent>
-    <LandingComponent class="landingComponent" v-show="this.pageNum == 2"></LandingComponent>
+    <div class="subContainer">
+      <LoginComponent class="loginComponent" v-show="this.page == 'loginPage'"></LoginComponent>
+      <LandingComponent class="landingComponent" v-show="this.page == 'mainPage'"></LandingComponent>
+    </div>
   </div>
 </template>
 
@@ -15,16 +17,24 @@ export default {
     LoginComponent,
     LandingComponent
   },
-  // watch: {
-  //   nowPage (oldVal,newVal){
-  //     newVal = this.$getter.store()
-  //   }
-  // }
   data() {
     return {
-      pageNum: 1
+      page: 'mainPage'
     }
-  }
+  },
+  // mounted() {
+  //   this.page = this.$store.getters.Get_Page
+  // },
+  // computed: {
+  //   isChange () {
+  //     return this.$store.getters.Get_Page;
+  //   }
+  // },
+  // watch: {
+  //   isChange() {
+  //     this.page = this.$store.getters.Get_Page;
+  //   }
+  // }
 }
 </script>
 
