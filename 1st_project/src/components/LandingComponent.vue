@@ -1,9 +1,14 @@
 <template>
   <div class="LandingContainer">
-    <div class="btnContainer box1"></div>
-    <div class="btnContainer box2"></div>    
-    <div class="btnContainer box3"></div>
-    <div class="btnContainer box4"></div>
+    <div class="navContainer">
+      <div class="box box1"></div>
+      <div class="box box2"></div>
+      <div class="box box3"></div>
+      <div class="box box4"></div>
+    </div>
+    <div class="contentContainer">
+      <div class="content"></div>
+    </div>
   </div>
 </template>
 
