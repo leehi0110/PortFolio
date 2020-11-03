@@ -1,0 +1,19 @@
+.wrapper {
+
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: red;
+
+    .navigationContainer {
+        width: 100%;
+    }
+
+    .contentsContainer {
+        width: 100%;
+
+    }
+}
