@@ -4,12 +4,10 @@ import Landing from '../views/LandingPage/LandingPage.vue'
 import Login from '../components/LoginComponent/Login.vue'
 import SignUp from '../components/SignUpComponent/SignUp.vue'
 import FindPassword from '../components/FindPasswordComponent/FindPassword.vue'
-import ResetPassword from '../components/ResetPasswordComponent/ResetPassword.vue'
 import Main from '../views/MainPage/MainPage.vue'
 import Page1 from '../components/Page1/Page1.vue'
 import Page2 from '../components/Page2/Page2.vue'
 import Page3 from '../components/Page3/Page3.vue'
-// import { component } from 'vue/types/umd'
 
 Vue.use(VueRouter)
 
@@ -30,10 +28,6 @@ const routes = [
       {
         path: 'findpassword',
         component: FindPassword,
-      },
-      {
-        path: 'findpassword/resetpassword',
-        component: ResetPassword
       }
     ]
   },
