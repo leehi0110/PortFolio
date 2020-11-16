@@ -1,0 +1,35 @@
+@import '../../components/BasicStyle/BasicStyle.scss';
+
+.wrapper {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+
+    .navigationContainer {
+        position: fixed;
+        
+        width: 25%;
+        min-height: 100%;
+
+        background-color: #E9E9E1;
+
+    }
+
+    .contentsContainer {
+        width: 75%;
+        min-height: 100%;
+
+        position: relative;
+        left: 25%;
+
+        background-color: #F5F5F5;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+}
